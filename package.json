@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "hamburger": "^0.1.1",
-    "hamburgers": "^1.2.1"
+    "hamburgers": "^1.2.1",
+    "swiper": "^8.4.4"
   }
 }
