@@ -1172,11 +1172,6 @@ body {
   text-align: center;
 }
 
-.article-italic-cont:hover {
-  transition-duration: 1s;
-  transform: translateY(10px);
-}
-
 .article-italic-block {
   max-width: 480px;
 }
