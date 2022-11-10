@@ -136,6 +136,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  @include _500px {
+    padding: 15px;
+  }
 }
 .main-title-h1-but-1 {
   min-height: 58px;
@@ -145,7 +148,7 @@ body {
   border: none;
   color: #ffffff;
 }
-.main-title-h1-but-1:hover {
+.main-title-h1-but-1:active {
   transition-duration: 0.4s;
   transform: scale(0.9);
 }
