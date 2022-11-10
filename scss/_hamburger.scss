@@ -1,2 +1,18 @@
-
-@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss"
+.hamburger--collapse .hamburger-inner::after {
+  background: #49ad09;
+}
+.hamburger--collapse .hamburger-inner::before {
+  background: #49ad09;
+}
+.hamburger--collapse .hamburger-inner {
+  background: #49ad09;
+}
+.hamburger--collapse.is-active .hamburger-inner::before {
+  background: #49ad09 !important;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background: #49ad09 !important;
+}
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
