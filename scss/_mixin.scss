@@ -1,5 +1,5 @@
-@mixin _1200px {
-    @media (max-width: 1200px) {
+@mixin _1100px {
+    @media (max-width: 1100px) {
       @content;
     }
   }
