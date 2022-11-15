@@ -63,7 +63,12 @@
           <div class="main-title-h1-button">
             <button class="main-title-h1-but-1">Contact Us</button>
             <div class="main-title-h1-but-3">
-              <a class="main-title-h1-but-2__link" href="#">Watch Video</a
+              <a class="main-title-h1-but-2__link" href="#"
+                >Watch Video
+                <img
+                  class="main-title-h1-but-2__svg"
+                  src="img/Polygon.svg"
+                  alt="" /></a
               ><img src="img/icon1.svg" alt="" />
             </div>
           </div>
@@ -121,7 +126,7 @@
               <div class="article-block-wrap-icon">
                 <div class="article-block-wrap-icon-1">
                   <img src="img/ic2.svg" alt="" /><span class="size"
-                    >Webflow Development</span
+                    >Shopify Development</span
                   >
                 </div>
                 <div class="article-block-wrap-p-div">
@@ -144,7 +149,7 @@
               <div class="article-block-wrap-icon">
                 <div class="article-block-wrap-icon-1">
                   <img src="img/ic3.svg" alt="" /><span class="size"
-                    >Webflow Development</span
+                    >Figma Web Designing</span
                   >
                 </div>
                 <div class="article-block-wrap-p-div">
@@ -165,7 +170,7 @@
               <div class="article-block-wrap-icon">
                 <div class="article-block-wrap-icon-1">
                   <img src="img/ic4.svg" alt="" /><span class="size"
-                    >Webflow Development</span
+                    >Php Development</span
                   >
                 </div>
                 <div class="article-block-wrap-p-div">
@@ -252,6 +257,10 @@
           </div>
           <button class="main-title-h1-but-1">All Projects</button>
         </div>
+        <div class="article-block-text">
+          <span class="header-span">Testimonials</span>
+          <h2 class="header-h2-h2">What Customers Say</h2>
+        </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -318,8 +327,8 @@
         </div>
         <div class="article-rectangle-wrap">
           <div class="article-rectangle-block">
-            <span class="article-rectangle-block-span">For Teams</span>
-            <span class="article-rectangle-block-span-2">$2999</span>
+            <span class="article-rectangle-block-span">For Starter</span>
+            <span class="article-rectangle-block-span-2">$1499</span>
             <span class="article-rectangle-block-span-3"
               ><img src="img/bird.svg" alt="" /> Feedback Categorization</span
             >
@@ -362,8 +371,8 @@
             <button class="main-title-h1-but-2">Contact Us</button>
           </div>
           <div class="article-rectangle-block">
-            <span class="article-rectangle-block-span">For Teams</span>
-            <span class="article-rectangle-block-span-2">$2999</span>
+            <span class="article-rectangle-block-span">For Company</span>
+            <span class="article-rectangle-block-span-2">Custom</span>
             <span class="article-rectangle-block-span-3"
               ><img src="img/bird.svg" alt="" /> Feedback Categorization</span
             >
@@ -454,6 +463,20 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          520: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          780: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
         },
       });
     </script>

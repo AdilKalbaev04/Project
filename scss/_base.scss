@@ -37,6 +37,9 @@ body {
     margin: 0 auto;
   }
 }
+.main-title-h1-but-2__svg {
+  margin-left: 10px;
+}
 .main-title-h1 {
   display: flex;
   flex-direction: column;
@@ -123,6 +126,9 @@ body {
 
 .link-green {
   color: #000;
+}
+.link-green:hover {
+  color: #49ad09;
 }
 .article-block-wrap {
   min-height: 287px;
