@@ -42,9 +42,10 @@
   box-shadow: 0px 100px 80px 0px #3131311a;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 15px;
+  justify-content: space-between;
+  padding: 10px;
   gap: 10px;
+  transition-duration: 0.4s;
 }
 .article-slider-text {
   font-size: 14px;

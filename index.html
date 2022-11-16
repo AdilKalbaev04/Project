@@ -12,7 +12,41 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="overlay"></div>
+
+    <div class="form_auth_block">
+      <div class="form_auth_block_content">
+        <button class="form_auth_exit">
+          <span class="form_auth_span">Закрыть</span>
+        </button>
+        <p class="form_auth_block_head_text">Авторизация</p>
+        <form class="form_auth_style" action="#" method="post">
+          <label>Введите Ваш имейл</label>
+          <input
+            type="email"
+            name="auth_email"
+            placeholder="Введите Ваш имейл"
+            required
+          />
+          <label>Введите Ваш пароль</label>
+          <input
+            type="password"
+            name="auth_pass"
+            placeholder="Введите пароль"
+            required
+          />
+          <button
+            class="form_auth_button"
+            type="submit"
+            name="form_auth_submit"
+          >
+            Войти
+          </button>
+        </form>
+      </div>
+    </div>
     <div class="container">
+      <button class="dark-btn"></button>
       <div class="logo">
         <button class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">
@@ -34,7 +68,7 @@
 
           <div class="logo__b">
             <div class="logo__a-2 animate__animated animate__backInDown">
-              <a class="none" href="#">Войти</a>
+              <a class="auth-toggle" href="#">Войти</a>
             </div>
             <div class="logo__a-3">
               <a class="none non" href="#">Подписаться</a>
@@ -406,6 +440,7 @@
           <h2 class="header-h2-h2">Нужно немного больше домой расти?</h2>
           <button class="main-title-h1-but-1">Свяжитесь с нами</button>
         </div>
+        <div class="on-up-cont"><a class="on-up" href="#">ВВЕРХ</a></div>
         <div class="article-footer-wrap">
           <div class="article-footer-block">
             <div class="logo__web">

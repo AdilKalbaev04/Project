@@ -1,6 +1,6 @@
 .swiper-button-prev {
   left: 0;
-  top: 27px;
+  top: 12px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -28,11 +28,11 @@
 }
 .swiper-button-next {
   right: 0;
-  top: 27px;
+  top: 21px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 60px;
   position: absolute;
   width: 80px;
   color: aliceblue;
@@ -41,7 +41,7 @@
   box-shadow: 0px 8px 15px 0px #48488a14;
 }
 .swiper-slider-btns {
-  height: 90px;
+  height: 60px;
   width: 200px;
   border-radius: 70px;
   display: flex;
