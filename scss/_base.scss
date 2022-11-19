@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   background: #f2f2f2;
-  @include _1100px {
+  @include _1140px {
     display: block;
   }
 
@@ -35,7 +35,7 @@ body {
   }
 }
 .main-img-wrap {
-  @include _1100px {
+  @include _1140px {
     display: none;
     margin: 0 auto;
   }
@@ -90,6 +90,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  @include _1140px {
+    flex-wrap: wrap;
+  }
 }
 .header-h2 {
   flex-direction: column;
