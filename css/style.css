@@ -1126,6 +1126,12 @@ body {
   align-items: center;
 }
 
+.form_auth_style {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .form_auth_block {
   position: fixed;
   top: 15%;
@@ -1159,19 +1165,8 @@ body {
   padding: 10px;
   font-size: 20px;
   font-weight: 600;
-  background: #ffffff;
+  background: #9bf067;
   opacity: 0.7;
-}
-
-.form_auth_block label {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  background: #ffffff;
-  opacity: 0.7;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .form_auth_block input {
