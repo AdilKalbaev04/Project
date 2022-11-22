@@ -105,6 +105,9 @@ body {
   font-size: 45px;
   font-family: Gilroy;
   font-weight: 500;
+  @include _350px {
+    font-size: 32px;
+  }
 }
 .header-block {
   display: flex;
@@ -159,11 +162,18 @@ body {
   transform: scale(1.1);
   box-shadow: 0px 100px 80px 0px #3131311a;
 }
+.article-rectangle-block-bock {
+  display: flex;
+  gap: 5px;
+}
 .main-title-h1-but-2 {
   min-height: 58px;
+  align-self: center;
   width: 200px;
   border: 1px solid #514040;
   border-radius: 5px;
+  margin-top: 35px;
+  padding: 0px 18px;
   background: #ffff;
   color: #000;
 }
@@ -221,9 +231,10 @@ body {
 .form_auth_block {
   position: fixed;
   top: 15%;
-  left: 36%;
-  width: 500px;
-  height: 500px;
+  left: 0;
+  right: 0;
+  width: 350px;
+  height: 350px;
   margin: 0 auto;
   background: #9bf067;
   display: flex;
@@ -235,19 +246,20 @@ body {
   transform: scale(0);
   transition: 0.3s;
   z-index: 99;
+  @include _768px {
+    width: 250px;
+    height: 250px;
+
+  }
 
   &.is-active {
     display: flex;
     transform: scale(1.2);
   }
 }
-.form_auth_block_content {
-  padding-top: 15%;
-}
 .form_auth_block_head_text {
   display: block;
   text-align: center;
-  padding: 10px;
   font-size: 20px;
   font-weight: 600;
   background: #9bf067;
@@ -266,7 +278,7 @@ body {
 input:focus {
   color: #000000;
   border-radius: 10px;
-  border: 2px solid #436fea;
+  border: 2px solid white transparent;
 }
 .form_auth_button {
   display: block;
@@ -279,10 +291,10 @@ input:focus {
   cursor: pointer;
 }
 .form_auth_exit {
-  background: #49ad09;
+  background: #9bf067;
   border: none;
   position: absolute;
-  top: 2px;
+  top: 8px;
   right: 2px;
   &.is-active {
   }
@@ -302,6 +314,7 @@ input:focus {
   background: #9bf067;
   width: 60px;
   height: 60px;
+  z-index: 1111111;
   border-radius: 40%;
 }
 .on-up {

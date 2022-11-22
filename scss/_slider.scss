@@ -38,14 +38,18 @@
   height: 282px;
   max-width: 380px;
   border-radius: 5px;
-  background: #ffffff;
-  box-shadow: 0px 100px 80px 0px #3131311a;
+
   display: flex;
+  box-shadow: 0px 2px 10px 0px #3131311a;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 40px 32px;
   gap: 10px;
   transition-duration: 0.4s;
+
+  @include _768px {
+    min-height: 282px;
+  }
 }
 .article-slider-text {
   font-size: 14px;
@@ -57,8 +61,11 @@
 .article-slider-p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: -0.01em;
+  @include _992px {
+    line-height: 15px;
+  }
 }
 .article-slider-btns {
   height: 66px;

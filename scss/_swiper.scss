@@ -1,14 +1,17 @@
 .swiper-button-prev {
-  left: 0;
-  top: 12px;
+  left: -10px;
+  top: 11px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80px;
   color: #000;
-
   width: 80px;
+}
+.swiper-slider-btns:hover {
+  transition: all ease-in 0.3s;
+  background: rgb(226, 226, 226);
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -27,51 +30,62 @@
   justify-content: center;
 }
 .swiper-button-next {
-  right: 0;
-  top: 21px;
+  right: 3px;
+  top: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 55px;
   position: absolute;
-  width: 80px;
+  width: 55px;
   color: aliceblue;
   border-radius: 40px;
   background: #313131;
   box-shadow: 0px 8px 15px 0px #48488a14;
 }
+.swiper-button-next:hover {
+  background: #000000;
+}
 .swiper-slider-btns {
   height: 60px;
-  width: 200px;
+  margin: 0 auto;
+  width: 120px;
   border-radius: 70px;
   display: flex;
   position: relative;
-  left: 349px;
-  top: -34px;
+  left: 0;
+  right: 0;
+  top: -100px;
   z-index: 1000;
   background: white;
-  @include _768px {
-    left: 233px;
-    top: -34px;
-  }
-  @include _500px {
-    left: 100px;
-    top: -4px;
-  }
 }
 .swiper {
+  position: relative;
   min-height: 540px;
-  max-width: 892px;
+  max-width: 1100px;
   margin-bottom: 50px;
-  background: #ccc;
+
+  padding: 20px !important;
   width: unset;
   height: unset;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #ccc;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    box-shadow: 0px 13px 36px 0px #3131311a;
+    bottom: 50px;
+  }
 }
 .swiper-wrapper {
   position: relative;
   max-width: 892px !important;
   min-height: 540px !important;
   z-index: 1;
+
   display: flex;
   transition-property: transform;
   box-sizing: border-box !important;
@@ -79,6 +93,7 @@
 .swiper-slide {
   min-height: 282px !important;
   margin-top: 80px;
+  border-radius: 8px;
   @include _500px {
   }
 }

@@ -24,6 +24,10 @@
   justify-content: space-between;
   padding: 15px;
   align-items: center;
+  @include _350px {
+    flex-direction: column;
+
+  }
 }
 .article-italic-span {
   font-size: 28px;
@@ -40,6 +44,7 @@
 .article-italic-link {
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
   letter-spacing: 0em;
 }
 .article-italic-wrap {
