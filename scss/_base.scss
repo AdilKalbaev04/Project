@@ -49,14 +49,14 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  @include _992px {
+    padding: 30px;
+  }
 }
 .main-title-h1-h1__h1 {
   font-size: 58px;
   font-family: Gilroy;
   font-weight: 500;
-  @include _992px {
-    font-size: 38px;
-  }
   @include _500px {
     font-size: 28px;
   }
@@ -78,7 +78,8 @@ body {
   justify-content: center;
   gap: 20px;
   @include _500px {
-    padding: 15px;
+    padding: 30px;
+    flex-direction: column;
   }
 }
 .main-title-h1-green {
@@ -249,7 +250,6 @@ body {
   @include _768px {
     width: 250px;
     height: 250px;
-
   }
 
   &.is-active {
@@ -293,6 +293,7 @@ input:focus {
 .form_auth_exit {
   background: #9bf067;
   border: none;
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 2px;

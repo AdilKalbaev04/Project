@@ -933,16 +933,16 @@ body {
   justify-content: center;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .main-title-h1 {
+    padding: 30px;
+  }
+}
 
 .main-title-h1-h1__h1 {
   font-size: 58px;
   font-family: Gilroy;
   font-weight: 500;
-}
-@media (max-width: 992px) {
-  .main-title-h1-h1__h1 {
-    font-size: 38px;
-  }
 }
 @media (max-width: 500px) {
   .main-title-h1-h1__h1 {
@@ -973,7 +973,8 @@ body {
 }
 @media (max-width: 500px) {
   .main-title-h1-button {
-    padding: 15px;
+    padding: 30px;
+    flex-direction: column;
   }
 }
 
@@ -1214,6 +1215,7 @@ input:focus {
 .form_auth_exit {
   background: #9bf067;
   border: none;
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 2px;
