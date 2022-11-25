@@ -10,7 +10,8 @@ let overlay = document.querySelector(".overlay");
 let none = document.querySelector(".auth-toggle");
 let auth = document.querySelector(".form_auth_block");
 let exit = document.querySelector(".form_auth_exit");
-let dark = document.querySelector(".dark-btn");
+let topButton = document.querySelector(".on-up-cont");
+// let dark = document.querySelector(".dark-btn");
 
 none.addEventListener("click", function (e) {
   none.classList.toggle("is-active");
@@ -30,6 +31,15 @@ exit.addEventListener("click", function () {
   overlay.classList.toggle("is-active");
   exit.classList.toggle("is-active");
 });
-dark.addEventListener("click",function(){
-  document.body.classList.toggle("dark")
-})
+// dark.addEventListener("click", function () {
+//   document.body.classList.toggle("dark");
+// });
+
+window.addEventListener("scroll", function () {
+  let wScroll = this.scrollY;
+  if (wScroll >= 500) {
+    topButton.classList.add("active");
+  } else {
+    topButton.classList.remove("active");
+  }
+});
