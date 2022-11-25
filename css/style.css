@@ -883,6 +883,10 @@ body {
   font-weight: 500;
 }
 
+.fixed {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
 }

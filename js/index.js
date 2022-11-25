@@ -4,6 +4,8 @@ let logo = document.querySelector(".logo__a");
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("is-active");
   logo.classList.toggle("is-active");
+  document.body.classList.toggle("fixed");
+  overlay.classList.toggle("is-active");
 });
 
 let overlay = document.querySelector(".overlay");
@@ -24,6 +26,8 @@ overlay.addEventListener("click", function () {
   auth.classList.remove("is-active");
   overlay.classList.toggle("is-active");
   exit.classList.toggle("is-active");
+  hamburger.classList.remove("is-active");
+  logo.classList.remove("is-active");
 });
 exit.addEventListener("click", function () {
   none.classList.remove("is-active");

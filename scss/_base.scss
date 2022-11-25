@@ -9,6 +9,9 @@ body {
   font-family: Gilroy;
   font-weight: 500;
 }
+.fixed {
+  overflow: hidden;
+}
 .container {
   margin: 0 auto;
 }
@@ -310,7 +313,7 @@ input:focus {
   position: fixed;
   bottom: -40px;
   left: 2%;
-  transition: all ease-in .4s;
+  transition: all ease-in 0.4s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,17 +324,14 @@ input:focus {
   opacity: 0;
   visibility: hidden;
   border-radius: 40%;
-  
 }
 .on-up {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-
 }
 .on-up-cont.active {
   opacity: 1;
   bottom: 40px;
   visibility: visible;
-  
 }
